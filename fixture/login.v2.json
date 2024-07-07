@@ -1,0 +1,26 @@
+{
+  "validUser": {
+    "email": "rijen@gmail.com",
+    "password": "rijen123"
+  },
+  "invalidUser": {
+    "invalidCredentials": {
+      "email": "invalidUsername",
+      "password": "Password123"
+    }
+  },
+  "fillForm": {
+    "firstName": "Rijen",
+    "lastName": "Maharjan",
+    "dob": "2059/05/23",
+    "email": "rijen@gmail.com",
+    "phone": "9812345678",
+    "street1": "soalteemodee",
+    "street2": "lasata marga",
+    "city": "kathmandu",
+    "state": "bagmati",
+    "postalcode": "4404",
+    "country": "Nepal",
+    "editName": "Pranisha"
+  }
+}
