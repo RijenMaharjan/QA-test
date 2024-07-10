@@ -26,7 +26,7 @@ module.exports = defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: "https://practicetestautomation.com/practice-test-login/",
-    baseURL: "https://thinking-tester-contact-list.herokuapp.com/",
+    baseURL: "https://x.com/i/flow/login",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
 
