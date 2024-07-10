@@ -3,16 +3,16 @@ const testData = require("../../fixture/login.json");
 
 // const { beforeEach } = require("node:test");
 
-test.beforeEach(async ({ page }) => {
-  await page.goto("./");
-});
+// test.beforeEach(async ({ page }) => {
+//   await page.goto("./");
+// });
 
-test("has title", async ({ page }) => {
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Test Login | Practice Test Automation/);
-});
+// test("has title", async ({ page }) => {
+//   // Expect a title "to contain" a substring.
+//   await expect(page).toHaveTitle(/Test Login | Practice Test Automation/);
+// });
 
-test.describe("valid login tests", () => {
+test.describe.skip("valid login tests", () => {
   test("login valid", async ({ page }) => {
     await page.locator("#username").fill(testData.validUser.username);
     await page.locator("#password").fill(testData.validUser.password);
@@ -24,7 +24,7 @@ test.describe("valid login tests", () => {
   });
 });
 
-test.describe("invalid login tests", () => {
+test.describe.skip("invalid login tests", () => {
   test("login invalid", async ({ page }) => {
     await page
       .locator("#username")

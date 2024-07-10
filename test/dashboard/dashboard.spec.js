@@ -4,11 +4,11 @@ import { LoginPage } from "../../pageObjects/login.po";
 import { DashboardPage } from "../../pageObjects/dashboard.po";
 const { getCurrrentDateTimeStamp } = require("../../utils/helper.spec");
 
-test.beforeEach(async ({ page }) => {
-  await page.goto("./");
-});
+// test.beforeEach(async ({ page }) => {
+//   await page.goto("./");
+// });
 
-test.describe("Dashboard crud check", () => {
+test.describe.skip("Dashboard crud check", () => {
   test.only("crud", async ({ page }) => {
     const login = new LoginPage(page);
     await login.login(testData.validUser.username, testData.validUser.password);

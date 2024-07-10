@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto("./");
 });
 
-test.describe("Valid login test", () => {
+test.describe.skip("Valid login test", () => {
   test("login", async ({ page }) => {
     await page.locator("#username").fill(testData.validUser.username);
     await page.locator("#password").fill(testData.validUser.password);

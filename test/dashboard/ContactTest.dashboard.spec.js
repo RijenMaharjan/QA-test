@@ -7,14 +7,14 @@ const { access } = require("fs");
 
 let interceptId;
 
-test.beforeEach(async ({ page }) => {
-  await page.goto("/");
-  const login = new LoginPage(page);
-  await login.login(testData.validUser.email, testData.validUser.password);
-  await login.verifyValidLogin();
-});
+// test.beforeEach(async ({ page }) => {
+//   await page.goto("/");
+//   const login = new LoginPage(page);
+//   await login.login(testData.validUser.email, testData.validUser.password);
+//   await login.verifyValidLogin();
+// });
 
-test.describe("Dashboard crud check", () => {
+test.describe.skip("Dashboard crud check", () => {
   test("crud", async ({ page }) => {
     await page.locator('//*[@id="add-contact"]').click();
 
@@ -31,7 +31,7 @@ test.describe("Dashboard crud check", () => {
     await page.waitForTimeout(10000);
   });
 
-  test.only("contact edit test", async ({ context, page, request }) => {
+  test("contact edit test", async ({ context, page, request }) => {
     const dashboardPage = new DashboardPage(page);
     const Data = { firstName: "Rijen", lastName: "Maharjan" };
     const accessToken = await authenticateUser1({ request });

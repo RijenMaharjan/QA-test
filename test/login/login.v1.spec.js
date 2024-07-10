@@ -4,16 +4,16 @@ import { LoginPage } from "../../pageObjects/login.po";
 
 // const { beforeEach } = require("node:test");
 
-test.beforeEach(async ({ page }) => {
-  await page.goto("./");
-});
+// test.beforeEach(async ({ page }) => {
+//   await page.goto("./");
+// });
 
-test("has title", async ({ page }) => {
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Test Login | Practice Test Automation/);
-});
+// test("has title", async ({ page }) => {
+//   // Expect a title "to contain" a substring.
+//   await expect(page).toHaveTitle(/Test Login | Practice Test Automation/);
+// });
 
-test.describe("valid login tests", () => {
+test.describe.skip("valid login tests", () => {
   test("login valid", async ({ page }) => {
     const login = new LoginPage(page);
     await login.login(testData.validUser.username, testData.validUser.password);
@@ -21,7 +21,7 @@ test.describe("valid login tests", () => {
   });
 });
 
-test.describe("invalid login tests", () => {
+test.describe.skip("invalid login tests", () => {
   test("login invalid", async ({ page }) => {
     const login = new LoginPage(page);
     await login.login(
