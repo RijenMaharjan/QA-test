@@ -9,7 +9,7 @@ const { getCurrrentDateTimeStamp } = require("../../utils/helper.spec");
 // });
 
 test.describe.skip("Dashboard crud check", () => {
-  test.only("crud", async ({ page }) => {
+  test("crud", async ({ page }) => {
     const login = new LoginPage(page);
     await login.login(testData.validUser.username, testData.validUser.password);
 
