@@ -1,0 +1,33 @@
+{
+  "validUser": {
+    "email": "cruellareyna@gmail.com",
+    "password": "rijen123"
+  },
+
+  "invalidUser": {
+    "invalidCredentials": {
+      "email": "invalidemail@gmail.com",
+      "password": "rijen1234"
+    },
+    "emptyField": {
+      "email": "",
+      "password": ""
+    },
+    "emptyEmail": {
+      "email": "",
+      "password": "rijen1234"
+    },
+    "emptyPassword": {
+      "email": "cruellareyna@gmail.com",
+      "password": ""
+    },
+    "emailLeadingSpace": {
+      "email": "     cruellareyna@gmail.com",
+      "password": "rijen1234"
+    },
+    "passwordLeadingSpace": {
+      "email": "cruellareyna@gmail.com",
+      "password": " rijen1234"
+    }
+  }
+}
